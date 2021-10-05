@@ -1,7 +1,7 @@
 <?php
 
 if ( ! function_exists( 'twentytwentytwo_support' ) ) :
-	function twentytwentytwo_support()  {
+	function twentytwentytwo_support() {
 
 		// Adding support for featured images.
 		add_theme_support( 'post-thumbnails' );
@@ -22,7 +22,7 @@ function twentytwentytwo_scripts() {
 	// Enqueue theme stylesheet.
 	wp_enqueue_style( 'twentytwentytwo-style', get_template_directory_uri() . '/style.css', array(), wp_get_theme()->get( 'Version' ) );
 }
-add_action( 'wp_enqueue_scripts', 'twentytwentytwo_scripts' );
+	add_action( 'wp_enqueue_scripts', 'twentytwentytwo_scripts' );
 
 /**
  * Enqueue editor styles.
